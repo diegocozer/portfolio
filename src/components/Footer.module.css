@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.footer {
+    width: 50%;
+}
+
+
+.footer a {
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-family: "DM sans";
+    font-size: 12px;
+}
+
+.desenvolvido {
+    width: 50%;
+    color: #fff;
+}
+
+.desenvolvido a{
+    font-family: "DM sans";
+
+}
+
+.degrade {
+    background-image: linear-gradient(270deg, #13B0F5, #E70FAA);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-family: "DM sans";
+
+}

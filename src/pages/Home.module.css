@@ -1,0 +1,62 @@
+.container {
+    max-width: 100%;
+    height: calc(90vh - 60px);
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.container p {
+    text-align: start;
+    font-size: 30px;
+    font-family: 'Poppins';
+    margin: 0;
+
+}
+
+.degrade {
+    background-image: linear-gradient(270deg, #13B0F5, #E70FAA);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.conteudo {
+    max-width: 100%;
+    height: 100%;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_foto {
+    max-width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+
+.moldura {
+    background: linear-gradient(279deg, #E70FAA, #00C0FD);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 100%;
+}
