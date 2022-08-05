@@ -62,7 +62,8 @@
 .wpp {
     position: fixed;
     top: 90%;
-    left: 90%;
+    left: 93%;
+    z-index: 1;
 }
 
 .wpp:hover {
@@ -98,8 +99,8 @@
 
 @media (max-width: 700px) {
     .wpp {
-        left: 28rem;
-        top: 57rem;
+        left: 24rem;
+        top: 35rem;
         z-index: 1;
     }
 
