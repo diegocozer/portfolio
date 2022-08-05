@@ -65,54 +65,73 @@
     left: 90%;
 }
 
-.wpp:hover{
+.wpp:hover {
     animation: treme 1s linear infinite;
 }
 
 .wpp img {
     width: 50px;
-   
+
 }
 
 @keyframes treme {
-    0% {margin-left: 0; }
-    25% {margin-left: 5px;}
-    50% {margin-left: 0;}
-    75% {margin-left: -5px;}
-    100% {margin-left: 0;}
-  }
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: 5px;
+    }
+
+    50% {
+        margin-left: 0;
+    }
+
+    75% {
+        margin-left: -5px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
 
 @media (max-width: 700px) {
-    .wpp{
+    .wpp {
         left: 28rem;
-        top:  57rem;
+        top: 57rem;
         z-index: 1;
     }
-  
-    .container p{
+
+    .container {
+        height: 60vh;
+    }
+
+    .container p {
         font-size: 1.1rem;
     }
 
-  .container_foto{
-    max-width: 40%;
-    margin-left: 1rem;
-  }
-  .moldura{
-    width: 110px;
-    height: 110px;
-  }
+    .container_foto {
+        max-width: 40%;
+        margin-left: 1rem;
+    }
 
-  .conteudo{
-    width: 100%;
-    padding: 20px;
+    .moldura {
+        width: 110px;
+        height: 110px;
+    }
 
-  }
+    .conteudo {
+        width: 100%;
+        padding: 20px;
+
+    }
 
 
-  .foto{
-    width: 100px;
-    height: 100px;
-  }
+    .foto {
+        width: 100px;
+        height: 100px;
+    }
 
-    
+
 }

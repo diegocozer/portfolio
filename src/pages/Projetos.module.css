@@ -76,3 +76,11 @@
 .descricao {
     font-size: 12px !important;
 }
+
+@media (max-width: 700px) {
+    .conteudo{
+        max-width: 150px;
+        height: 200px;
+    }
+    
+}
