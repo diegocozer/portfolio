@@ -5,7 +5,7 @@ export default function navBar() {
   return (
     <header className={styles.container}>
       <a href="/" className={styles.logo}>
-        <img src="logo.png" alt="" style={{ width: "50px" }} />
+        <img className={styles.logo_i} src="logo.png" alt="" style={{ width: "50px" }} />
       </a>
       <nav className={styles.navbar}>
         <a href="#menu">Home</a>

@@ -8,36 +8,17 @@ export default function Footer() {
       <div className={styles.logo}>
         <img src="logo.png" alt="logo" style={{ width: "50px" }} />
       </div>
-      <p >
-        <i style={{ color: "green" }}>
-          {" "}
-          <FaWhatsapp />{" "}
-        </i>
-        (47) 9 8427-4224
-      </p>
+
+      <i style={{ color: "green" }} className={styles.wpp}>
+        <FaWhatsapp />{" "}
+      </i>
+      <p>(47) 9 8427-4224</p>
       <p>
         <i>
           <AiOutlineMail />
         </i>
         diego.cozer16@gmail.com
       </p>
-
-      <div className={styles.redes}>
-        <a
-          href="https://github.com/diegocozer"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/diego-cozer-farias/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <FaLinkedin />
-        </a>
-      </div>
     </section>
   );
 }

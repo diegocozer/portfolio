@@ -41,3 +41,15 @@
 .python{
     max-width: 105px !important ;
 }
+
+@media (max-width: 700px) {
+.tech img{
+    max-width: 80px;
+}   
+.flutter{
+    max-width: 60px !important;
+} 
+.python{
+    max-width: 80px !important;
+}
+}
