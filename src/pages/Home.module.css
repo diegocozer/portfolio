@@ -1,138 +1,129 @@
 .container {
-    max-width: 100%;
-    height: calc(90vh - 60px);
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  max-width: 100%;
+  height: calc(90vh - 60px);
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container p {
-    text-align: start;
-    font-size: 30px;
-    font-family: 'Poppins';
-    margin: 0;
-
+  text-align: start;
+  font-size: 30px;
+  font-family: "Poppins";
+  margin: 0;
 }
 
 .degrade {
-    background-image: linear-gradient(270deg, #13B0F5, #E70FAA);
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
+  background-image: linear-gradient(270deg, #13b0f5, #e70faa);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .conteudo {
-    max-width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container_foto {
-    max-width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
+  max-width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
-
 .moldura {
-    background: linear-gradient(279deg, #E70FAA, #00C0FD);
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: linear-gradient(279deg, #e70faa, #00c0fd);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .foto {
-    width: 190px;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 100%;
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 100%;
 }
 
 .wpp {
-    position: fixed;
-    top: 90%;
-    left: 93%;
-    z-index: 1;
+  position: fixed;
+  top: 90%;
+  left: 93%;
+  z-index: 1;
 }
 
 .wpp:hover {
-    animation: treme 1s linear infinite;
+  animation: treme 1s linear infinite;
 }
 
 .wpp img {
-    width: 50px;
-
+  width: 50px;
 }
 
 @keyframes treme {
-    0% {
-        margin-left: 0;
-    }
+  0% {
+    margin-left: 0;
+  }
 
-    25% {
-        margin-left: 5px;
-    }
+  25% {
+    margin-left: 5px;
+  }
 
-    50% {
-        margin-left: 0;
-    }
+  50% {
+    margin-left: 0;
+  }
 
-    75% {
-        margin-left: -5px;
-    }
+  75% {
+    margin-left: -5px;
+  }
 
-    100% {
-        margin-left: 0;
-    }
+  100% {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 700px) {
-    .wpp {
-        left: 21rem;
-        top: 40rem;
-        z-index: 1;
-    }
+  .wpp {
+    left: 21rem;
+    top: 40rem;
+    z-index: 1;
+  }
 
-    .container {
-        height: 60vh;
-    }
+  .container {
+    height: 60vh;
+  }
 
-    .container p {
-        font-size: 1.1rem;
-    }
+  .container p {
+    font-size: 1.1rem;
+  }
 
-    .container_foto {
-        max-width: 40%;
-        margin-left: 1rem;
-    }
+  .container_foto {
+    max-width: 40%;
+    margin-left: 1rem;
+  }
 
-    .moldura {
-        width: 110px;
-        height: 110px;
-    }
+  .moldura {
+    width: 110px;
+    height: 110px;
+  }
 
-    .conteudo {
-        width: 100%;
-        padding: 20px;
+  .conteudo {
+    width: 100%;
+    padding: 20px;
+  }
 
-    }
-
-
-    .foto {
-        width: 100px;
-        height: 100px;
-    }
-
-
+  .foto {
+    width: 100px;
+    height: 100px;
+  }
 }
