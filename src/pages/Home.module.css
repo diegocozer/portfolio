@@ -1,7 +1,7 @@
 .container {
   max-width: 100%;
   height: calc(90vh - 60px);
-  background-color: black;
+  /* background-color: black; */
   color: white;
   display: flex;
   justify-content: center;
@@ -34,25 +34,44 @@
   max-width: 40%;
   height: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
-.moldura {
-  background: linear-gradient(279deg, #e70faa, #00c0fd);
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+.div {
+  width: 210px;
+  height: 210px;
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.foto {
-  width: 190px;
-  height: 190px;
-  object-fit: cover;
+.div::before {
+  content: "";
+  background: linear-gradient(#e70faa, #00c0fd);
+
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  animation: rotate 3s linear infinite;
+}
+
+.div::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
   border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("foto.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .wpp {
@@ -92,10 +111,19 @@
   }
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 700px) {
   .wpp {
     left: 21rem;
-    top: 40rem;
+    top: 85%;
     z-index: 1;
   }
 
@@ -112,9 +140,33 @@
     margin-left: 1rem;
   }
 
-  .moldura {
+  .div {
+    width: 115px;
+    height: 115px;
+  }
+  .div::before {
+    content: "";
+    background: linear-gradient(#e70faa, #00c0fd);
+
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: rotate 3s linear infinite;
+  }
+
+  .div::after {
+    content: "";
     width: 110px;
     height: 110px;
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("foto.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .conteudo {

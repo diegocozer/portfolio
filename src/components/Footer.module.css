@@ -1,55 +1,58 @@
 .container {
-    width: 100%;
-    height: 60px;
-    background-color: black;
+  width: 100%;
+  height: 60px;
+  background-color: black;
 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
-    width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
 }
 
-
 .footer a {
-    color: #fff;
-    margin: 20px;
-    text-decoration: none;
-    font-family: "DM sans";
-    font-size: 12px;
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
+  font-family: "DM sans";
+  font-size: 12px;
 }
 
 .desenvolvido {
-    width: 50%;
-    color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  color: #fff;
 }
 
 .desenvolvido a {
-    font-family: "DM sans";
-
+  font-family: "DM sans";
 }
 
 .degrade {
-    background-image: linear-gradient(270deg, #13B0F5, #E70FAA);
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    font-weight: bold;
-    font-family: "DM sans";
-
+  background-image: linear-gradient(270deg, #13b0f5, #e70faa);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  font-family: "DM sans";
 }
 
 @media (max-width: 700px) {
-    .footer a {
-        font-size: 10px;
-        margin: 0 10px;
-    }
+  .footer a {
+    font-size: 10px;
+    margin: 0 10px;
+  }
 
-    .desenvolvido p {
-        font-size: 14px;
-    }
-
+  .desenvolvido p {
+    font-size: 10px;
+  }
 }

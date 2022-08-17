@@ -1,4 +1,3 @@
-import { FaWhatsapp } from "react-icons/fa";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -13,14 +12,13 @@ export default function Home() {
           <p>e eu sou desenvolvedor web</p>
         </h1>
         <div className={styles.container_foto}>
-          <div className={styles.moldura}>
-            <img src="../foto.jpeg" alt="" className={styles.foto} />
-          </div>
+          <div className={styles.div}></div>
         </div>
         <a
           href="https://wa.me/5547984274224?text=Olá, cheguei até aqui pelo seu site!"
           target="_blank"
           className={styles.wpp}
+          rel="noreferrer"
         >
           <img src="whatsapp.png" alt="" />
         </a>

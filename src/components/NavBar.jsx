@@ -2,7 +2,7 @@ import styles from "./NavBar.module.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FiDownloadCloud } from "react-icons/fi";
 
-export default function navBar() {
+export default function NavBar() {
   return (
     <header className={styles.container}>
       <a href="/" className={styles.logo}>
@@ -20,20 +20,21 @@ export default function navBar() {
         <a
           href="https://github.com/diegocozer"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
           <FaGithub />
         </a>
         <a
           href="https://www.linkedin.com/in/diego-cozer-farias/ "
-          rel="noopener noreferrer"
           target="_blank"
+          rel="noreferrer"
         >
           <FaLinkedin />
         </a>
         <a
           href="https://drive.google.com/file/d/1wkk_gmpa2LVA4OUvMRv5UVpJs5sEmNMh/view"
           target="_blank"
+          rel="noreferrer"
         >
           <FiDownloadCloud />
         </a>
